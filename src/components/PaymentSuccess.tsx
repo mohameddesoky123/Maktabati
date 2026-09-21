@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { CheckCircle, Download, Mail, FileText, Copy, Check } from 'lucide-react';
+import { CheckCircle, Download, Mail, Copy, Check } from 'lucide-react';
+import { BrandIcon } from '@/components/BrandLogo';
 import { product } from '@/data/product';
 
 type PaymentSuccessProps = {
@@ -41,7 +42,7 @@ export default function PaymentSuccess({ orderId, onDownload, onBackToStore }: P
           <div className="bg-navy-50/50 rounded-2xl p-4 mb-7 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-xl bg-white shadow-soft flex items-center justify-center">
-                <FileText className="w-5 h-5 text-navy-600" />
+                <BrandIcon size={20} className="text-navy-700" />
               </div>
               <div className="text-right">
                 <div className="text-xs text-navy-400">رقم الطلب</div>

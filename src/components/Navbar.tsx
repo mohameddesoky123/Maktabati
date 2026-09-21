@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, FileText, ArrowLeft } from 'lucide-react';
+import { Menu, X, ArrowLeft } from 'lucide-react';
 import { useScrollSpy } from '@/hooks/useScrollSpy';
+import { BrandLogo } from '@/components/BrandLogo';
 
 const navLinks = [
   { id: 'hero', label: 'الرئيسية' },
@@ -49,12 +50,9 @@ export default function Navbar({ onBuyClick }: NavbarProps) {
           {/* Brand */}
           <button
             onClick={() => handleNavClick('hero')}
-            className="flex items-center gap-2.5 shrink-0 group"
+            className="shrink-0 group transition-opacity duration-200 group-hover:opacity-80"
           >
-            <div className="w-10 h-10 rounded-xl bg-navy-800 flex items-center justify-center shadow-soft transition-transform duration-300 group-hover:scale-105">
-              <FileText className="w-5 h-5 text-white" strokeWidth={2} />
-            </div>
-            <span className="text-xl font-bold text-navy-900">نُسخة</span>
+            <BrandLogo size="md" />
           </button>
 
           {/* Desktop Nav */}
@@ -110,12 +108,7 @@ export default function Navbar({ onBuyClick }: NavbarProps) {
           />
           <div className="fixed top-0 right-0 bottom-0 z-50 w-[85%] max-w-sm bg-white shadow-navy-lg animate-slide-in-right lg:hidden flex flex-col">
             <div className="flex items-center justify-between p-5 border-b border-navy-100">
-              <div className="flex items-center gap-2.5">
-                <div className="w-10 h-10 rounded-xl bg-navy-800 flex items-center justify-center">
-                  <FileText className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold text-navy-900">نُسخة</span>
-              </div>
+              <BrandLogo size="md" />
               <button
                 onClick={() => setMenuOpen(false)}
                 className="w-10 h-10 flex items-center justify-center rounded-xl text-navy-600 hover:bg-navy-50 transition-colors"

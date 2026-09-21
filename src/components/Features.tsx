@@ -1,4 +1,5 @@
-import { Check, ArrowLeft, FileText } from 'lucide-react';
+import { Check, ArrowLeft } from 'lucide-react';
+import { BrandIcon } from '@/components/BrandLogo';
 import { product } from '@/data/product';
 import ScrollReveal from '@/components/ScrollReveal';
 
@@ -24,7 +25,7 @@ export default function Features({ onBuyClick }: FeaturesProps) {
                   <div className="relative">
                     <div className="flex items-center gap-3 mb-6">
                       <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center">
-                        <FileText className="w-7 h-7 text-white" />
+                        <BrandIcon size={28} className="text-white" />
                       </div>
                       <div>
                         <div className="text-white font-semibold text-lg">الملف الرقمي</div>

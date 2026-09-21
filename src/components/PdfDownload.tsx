@@ -1,4 +1,5 @@
-import { Download, ShieldCheck, FileText, Lock } from 'lucide-react';
+import { Download, ShieldCheck, Lock } from 'lucide-react';
+import { BrandIcon } from '@/components/BrandLogo';
 import { product } from '@/data/product';
 
 type PdfDownloadProps = {
@@ -29,7 +30,7 @@ export default function PdfDownload({ onBackToStore }: PdfDownloadProps) {
           {/* File icon */}
           <div className="inline-flex items-center justify-center mb-6">
             <div className="w-20 h-20 rounded-2xl bg-navy-800 flex items-center justify-center shadow-soft">
-              <FileText className="w-10 h-10 text-white" />
+              <BrandIcon size={40} className="text-white" />
             </div>
           </div>
 
@@ -39,7 +40,7 @@ export default function PdfDownload({ onBackToStore }: PdfDownloadProps) {
           {/* File info */}
           <div className="bg-navy-50/50 rounded-2xl p-5 mb-7 flex items-center gap-4">
             <div className="w-14 h-14 rounded-xl bg-white shadow-soft flex items-center justify-center shrink-0">
-              <FileText className="w-7 h-7 text-navy-600" />
+              <BrandIcon size={28} className="text-navy-700" />
             </div>
             <div className="flex-1 text-right">
               <div className="font-bold text-navy-900 text-[15px]">الملف الرقمي PDF</div>

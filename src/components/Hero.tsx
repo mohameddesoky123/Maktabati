@@ -1,4 +1,5 @@
-import { ArrowLeft, Play, Download, FileText, Zap, ShieldCheck, Lock } from 'lucide-react';
+import { ArrowLeft, Play, Download, Zap, ShieldCheck, Lock } from 'lucide-react';
+import { BrandIcon } from '@/components/BrandLogo';
 import { product } from '@/data/product';
 
 type HeroProps = {
@@ -112,7 +113,7 @@ function PdfMockup() {
           <div className="relative">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
-                <FileText className="w-6 h-6 text-white" />
+                <BrandIcon size={24} className="text-white" />
               </div>
               <div className="text-white/70 text-sm font-medium">ملف رقمي PDF</div>
             </div>

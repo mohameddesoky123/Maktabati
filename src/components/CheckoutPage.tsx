@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { ArrowRight, ShieldCheck, FileText, CreditCard, Apple, Wallet, Check, Lock } from 'lucide-react';
+import { ArrowRight, ShieldCheck, CreditCard, Apple, Wallet, Check, Lock } from 'lucide-react';
+import { BrandIcon } from '@/components/BrandLogo';
 import { product } from '@/data/product';
 
 type CheckoutPageProps = {
@@ -201,7 +202,7 @@ export default function CheckoutPage({ onBack, onProceedToPayment }: CheckoutPag
               {/* Product */}
               <div className="flex gap-4 mb-5">
                 <div className="w-16 h-16 rounded-2xl bg-navy-800 flex items-center justify-center shrink-0">
-                  <FileText className="w-8 h-8 text-white" />
+                  <BrandIcon size={32} className="text-white" />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-bold text-navy-900 text-[15px] mb-1">الملف الرقمي PDF</h3>

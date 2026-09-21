@@ -1,4 +1,4 @@
-import { FileText } from 'lucide-react';
+import { BrandLogo } from '@/components/BrandLogo';
 
 const footerLinks = [
   {
@@ -33,14 +33,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-10 lg:gap-12 mb-14">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2.5 mb-5">
-              <div className="w-10 h-10 rounded-xl bg-navy-700 flex items-center justify-center">
-                <FileText className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold">نُسخة</span>
+            <div className="mb-5">
+              <BrandLogo size="md" variant="dark" />
             </div>
             <p className="text-navy-300 text-[15px] leading-relaxed max-w-sm">
-              منصة عربية لبيع المنتجات الرقمية. نوفّر محتوى عمليًا ومنظمًا يصلك فورًا بعد الدفع، بتجربة شراء سهلة وآمنة.
+              منصتك للوصول إلى المنتجات الرقمية بسهولة.
             </p>
           </div>
 
